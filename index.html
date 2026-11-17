@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大赛免费在线-赛事日程与参赛指南</title>
+<meta name="description" content="每日大赛免费在线汇总每日赛程、赛道规则与参赛入口，覆盖即兴命题赛、短视频挑战、图文创作赛、公开评审与积分榜，帮参赛者按日期和赛道快速找到当天可报名的比赛与评审标准。">
+<meta name="keywords" content="每日大赛免费在线">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Cpath d='M18 40l8-20 6 14 6-8 8 14' stroke='%23f2b631' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='47' r='3' fill='%23f2b631'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"每日大赛免费在线","description":"每日赛程、赛道规则与参赛入口汇总，覆盖即兴命题赛、短视频挑战、图文创作赛与公开评审。","inLanguage":"zh-CN"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"每日大赛免费在线的报名要交参赛费吗？","acceptedAnswer":{"@type":"Answer","text":"公开赛道的报名与提交都不收费，评审打分表在赛后48小时内公示。只有少数线下决赛涉及场地押金，押金在参赛签到后原路退回，未到场不退还。"}},
+{"@type":"Question","name":"即兴命题赛的题目什么时候公布？","acceptedAnswer":{"@type":"Answer","text":"命题在当晚20:00由赛务账号发布，选手有30分钟构思、90分钟提交。11月6日第41场的题目是“三分钟讲清一个反常识数字”，共收到217份提交。"}},
+{"@type":"Question","name":"短视频挑战的时长限制是多少？","acceptedAnswer":{"@type":"Answer","text":"横屏与竖屏均可，成片时长45秒至90秒，超时或不足按每分钟扣1分。11月4日第12期有14份作品因时长被扣分，仍有两份进入前十。"}},
+{"@type":"Question","name":"评审意见能申诉吗？","acceptedAnswer":{"@type":"Answer","text":"可以在成绩公布后24小时内提交申诉表，赛事组委会在3个工作日内答复。争议仅限于规则适用与计分错误，不重新评判审美取向。"}},
+{"@type":"Question","name":"积分榜的积分怎么计算？","acceptedAnswer":{"@type":"Answer","text":"单场名次分加出勤分，连续参赛三场额外加5分，缺席不扣分。积分按月清零，10月冠军“白鹭不飞”累计86分。"}}
+]}
+</script>
+<style>
+:root{
+  --ink:#16202c;
+  --ink-soft:#42546b;
+  --paper:#f7f5f0;
+  --card:#ffffff;
+  --line:#dcd6ca;
+  --brand:#1f3a5f;
+  --brand-deep:#142a45;
+  --accent:#e08a1e;
+  --accent-soft:#fdf1dd;
+  --teal:#2c6f6a;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 2px 6px rgba(20,42,69,.08),0 10px 26px rgba(20,42,69,.06);
+  --space:clamp(14px,2vw,24px);
+  --sticky-h:96px;
+  --fs-body:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-h)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;font-size:var(--fs-body);line-height:1.75;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--brand);text-decoration:none}
+a:hover{color:var(--accent)}
+h1,h2,h3,h4{margin:0;line-height:1.35;color:var(--brand-deep)}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .9em;padding-left:1.25em}
+li{margin-bottom:.3em}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ===== sticky wrappers ===== */
+.sticky-top{position:sticky;top:0;z-index:60}
+.announce{background:var(--brand-deep);color:#f3ede0;font-size:14px}
+.announce .in{max-width:1180px;margin:0 auto;padding:8px var(--space);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.announce b{color:#ffce7a;font-weight:600}
+.announce .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none}
+.announce a{color:#ffce7a;border-bottom:1px dashed rgba(255,206,122,.6)}
+.site-header{background:rgba(247,245,240,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.head-in{max-width:1180px;margin:0 auto;padding:10px var(--space);display:flex;align-items:center;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:40px;height:40px;flex:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1.2}
+.brand-txt strong{font-size:18px;color:var(--brand-deep);letter-spacing:.5px}
+.brand-txt span{font-size:11px;color:var(--ink-soft);letter-spacing:2px}
+.main-nav{margin-left:auto;display:flex;gap:2px;flex-wrap:wrap}
+.main-nav a{padding:6px 9px;font-size:14.5px;border-radius:var(--radius-sm);color:var(--ink-soft);white-space:nowrap}
+.main-nav a:hover{background:var(--accent-soft);color:var(--brand-deep)}
+.nav-toggle{display:none;margin-left:auto;background:var(--card);border:1px solid var(--line);color:var(--brand-deep);font-size:14px;padding:7px 12px;border-radius:var(--radius-sm);cursor:pointer}
+.head-entry{flex:none;font-size:14px;border:1px solid var(--brand);color:var(--brand);padding:6px 12px;border-radius:999px}
+.head-entry:hover{background:var(--brand);color:#fff}
+
+/* ===== layout ===== */
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--space)}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:
+  radial-gradient(900px 380px at 88% -10%,rgba(224,138,30,.16),transparent 60%),
+  radial-gradient(700px 320px at 6% 110%,rgba(44,111,106,.12),transparent 62%),
+  var(--paper)}
+.hero-in{max-width:1180px;margin:0 auto;padding:clamp(26px,5vw,54px) var(--space) clamp(24px,4vw,44px);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(18px,4vw,48px);align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--teal);margin-bottom:14px}
+.hero h1{font-size:clamp(28px,4.4vw,44px);letter-spacing:1px;margin-bottom:12px}
+.hero-lead{font-size:clamp(15px,1.5vw,17px);color:var(--ink-soft);max-width:38em}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{display:inline-block;padding:10px 20px;border-radius:999px;font-size:15px;border:1px solid transparent;transition:transform .15s ease}
+.btn-main{background:var(--brand);color:#fff}
+.btn-main:hover{background:var(--brand-deep);color:#fff;transform:translateY(-2px)}
+.btn-ghost{border-color:var(--brand);color:var(--brand)}
+.btn-ghost:hover{background:var(--accent-soft);color:var(--brand-deep);transform:translateY(-2px)}
+.hero-stats{display:flex;gap:22px;margin-top:24px;flex-wrap:wrap}
+.hero-stats div{line-height:1.3}
+.hero-stats b{display:block;font-size:22px;color:var(--brand)}
+.hero-stats span{font-size:12.5px;color:var(--ink-soft)}
+.hero-art{position:relative;min-height:240px}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 24px rgba(20,42,69,.14))}
+
+/* ===== section shell ===== */
+.section{padding:clamp(26px,4vw,44px) 0;border-bottom:1px solid var(--line)}
+.section:last-child{border-bottom:0}
+.sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:var(--space)}
+.sec-head h2{font-size:clamp(20px,2.4vw,26px)}
+.sec-head .hint{font-size:13.5px;color:var(--ink-soft)}
+.sec-no{font-size:12px;letter-spacing:2px;color:var(--accent);border:1px solid var(--line);border-radius:4px;padding:1px 6px;background:var(--card)}
+
+/* two column */
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:clamp(20px,3.5vw,40px);align-items:start}
+aside .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);margin-bottom:18px}
+aside h3{font-size:16px;margin-bottom:10px}
+aside ul{list-style:none;padding:0;margin:0;font-size:14px}
+aside li{margin:0}
+aside li a{display:block;padding:6px 8px;border-radius:6px;color:var(--ink-soft)}
+aside li a.active{background:var(--accent-soft);color:var(--brand-deep);font-weight:600}
+aside li a:hover{background:#f1ede4}
+
+/* cards */
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);transition:transform .15s ease}
+.card:hover{transform:translateY(-3px)}
+.card h3{font-size:16.5px;margin-bottom:6px}
+.card .meta{font-size:12.5px;color:var(--ink-soft);margin-bottom:8px;display:flex;gap:10px;flex-wrap:wrap}
+.card p{font-size:14.5px;color:var(--ink-soft);margin-bottom:0}
+.card .tag{display:inline-block;font-size:12px;background:var(--accent-soft);color:#8a5410;padding:1px 8px;border-radius:999px;margin-right:6px}
+.card-img{width:100%;height:132px;object-fit:cover;border-radius:var(--radius-sm);margin-bottom:10px}
+
+/* asy grid */
+.asy{display:grid;grid-template-columns:1.35fr .65fr;gap:16px}
+.asy .big{grid-row:span 2}
+.asy .big img{width:100%;height:196px;object-fit:cover;border-radius:var(--radius-sm);margin-bottom:12px}
+
+/* list rows */
+.rows{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.row{display:grid;grid-template-columns:76px minmax(0,1fr) auto;gap:14px;padding:12px 16px;border-bottom:1px solid var(--line);align-items:baseline;font-size:14.5px}
+.row:last-child{border-bottom:0}
+.row time{font-size:13px;color:var(--teal);font-variant-numeric:tabular-nums}
+.row a{font-weight:600;color:var(--ink)}
+.row a:hover{color:var(--accent)}
+.row .src{font-size:12.5px;color:var(--ink-soft);text-align:right;white-space:nowrap}
+@media(max-width:760px){.row{grid-template-columns:64px minmax(0,1fr)}.row .src{grid-column:2;text-align:left}}
+
+/* channel index */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-size:14px;color:var(--ink);display:inline-flex;gap:8px;align-items:center;transition:transform .15s}
+.chip:hover{border-color:var(--brand);color:var(--brand-deep);transform:translateY(-2px)}
+.chip small{color:var(--ink-soft);font-size:12px}
+
+/* deep read */
+.deep{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,3vw,32px);box-shadow:var(--shadow)}
+.deep h3{font-size:18px;margin:22px 0 8px;padding-left:10px;border-left:4px solid var(--accent)}
+.deep h3:first-child{margin-top:0}
+.deep p{font-size:15.5px;color:#22303f}
+.deep blockquote{margin:16px 0;padding:12px 16px;background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:14.5px;color:#5a4014}
+.compare{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0 18px}
+.compare caption{text-align:left;font-size:13px;color:var(--ink-soft);padding-bottom:6px}
+.compare th,.compare td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.compare th{background:#f1ede3;color:var(--brand-deep);font-weight:600}
+.compare td.num{font-variant-numeric:tabular-nums}
+
+/* steps */
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px 14px 58px;position:relative;font-size:14.5px}
+.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:16px;top:13px;font-size:18px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+.steps li b{display:block;color:var(--brand-deep)}
+
+/* faq */
+details.faq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:10px;padding:0}
+details.faq summary{cursor:pointer;padding:13px 16px;font-weight:600;font-size:15px;color:var(--brand-deep);list-style:none;display:flex;gap:10px;align-items:flex-start}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::before{content:"＋";color:var(--accent);font-weight:700;flex:none;line-height:1.4}
+details.faq[open] summary::before{content:"－"}
+details.faq .ans{padding:0 16px 14px 40px;font-size:14.5px;color:var(--ink-soft)}
+
+/* comments */
+.cmts{display:grid;gap:12px}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:13px 16px;font-size:14.5px}
+.cmt .who{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--ink-soft);margin-bottom:5px}
+.cmt .av{width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:12px;flex:none}
+.cmt p{margin:0}
+.cmt .rate{color:var(--accent)}
+
+/* timeline */
+.tl{list-style:none;padding:0;margin:0;border-left:2px solid var(--line);padding-left:18px}
+.tl li{position:relative;padding-bottom:16px;font-size:14.5px}
+.tl li::before{content:"";position:absolute;left:-25px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--paper)}
+.tl time{font-size:12.5px;color:var(--teal);display:block}
+
+/* tags */
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags a{font-size:13.5px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:5px 11px;color:var(--ink-soft)}
+.tags a:hover{border-color:var(--brand);color:var(--brand-deep);background:var(--accent-soft)}
+
+/* quote card */
+.quote{background:linear-gradient(135deg,#1f3a5f,#2c5a86);color:#f5f0e4;border-radius:var(--radius);padding:clamp(18px,3vw,30px);box-shadow:var(--shadow)}
+.quote p{font-size:15.5px;margin-bottom:14px}
+.quote .sig{font-size:13px;color:#ffd693}
+
+/* trust tiers */
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.tier{border:1px solid var(--line);border-radius:var(--radius);padding:14px;background:var(--card)}
+.tier h4{font-size:15px;margin-bottom:6px}
+.tier p{font-size:13.5px;color:var(--ink-soft);margin:0}
+.tier .lvl{font-size:11.5px;letter-spacing:1px;color:var(--teal)}
+
+/* search */
+.search{display:flex;gap:8px;margin-bottom:10px}
+.search input{flex:1;min-width:0;border:1px solid var(--line);border-radius:var(--radius-sm);padding:8px 11px;font-size:14px;background:#fff;color:var(--ink)}
+.search button{border:1px solid var(--brand);background:var(--brand);color:#fff;border-radius:var(--radius-sm);padding:8px 14px;font-size:14px;cursor:pointer}
+.search button:hover{background:var(--brand-deep)}
+.search-out{font-size:13.5px;color:var(--ink-soft)}
+.search-out .hit{display:block;padding:6px 0;border-bottom:1px dashed var(--line)}
+.search-out .hit b{color:var(--brand-deep);font-weight:600}
+
+/* footer */
+footer{background:#14202c;color:#c9d2dc;font-size:14px;padding:clamp(26px,4vw,44px) 0 20px}
+footer h3{color:#f4ecdd;font-size:16px;margin-bottom:10px}
+footer a{color:#c9d2dc}
+footer a:hover{color:#ffce7a}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:26px}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.foot-brand svg{width:36px;height:36px}
+.foot-brand strong{color:#fff;font-size:17px}
+.foot-list{list-style:none;padding:0;margin:0;font-size:13.5px}
+.foot-list li{margin-bottom:5px}
+.foot-note{border-top:1px solid #2a3a4a;margin-top:26px;padding-top:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:#8fa0b1}
+.notice{background:#1b2a39;border:1px solid #2a3a4a;border-radius:var(--radius-sm);padding:10px 12px;font-size:12.5px;color:#9fb0c1;margin-top:12px}
+
+/* back to top */
+#toTop{position:fixed;right:16px;bottom:20px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--brand);font-size:18px;cursor:pointer;box-shadow:var(--shadow);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s;z-index:70}
+#toTop.show{opacity:1;visibility:visible}
+#toTop:hover{transform:translateY(-2px)}
+
+/* responsive */
+@media(max-width:1000px){
+  .cols{grid-template-columns:1fr}
+  aside{order:2}
+  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-in{grid-template-columns:1fr}
+  .hero-art{order:-1;min-height:0;max-width:420px}
+  .asy{grid-template-columns:1fr}
+  .asy .big{grid-row:auto}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .tiers{grid-template-columns:1fr}
+}
+@media(max-width:820px){
+  .main-nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:8px var(--space) 12px;flex-direction:column;gap:2px}
+  .main-nav.open{display:flex}
+  .main-nav a{padding:9px 10px;font-size:15px}
+  .nav-toggle{display:inline-block}
+  .head-entry{display:none}
+  .head-in{position:relative}
+  :root{--sticky-h:104px}
+}
+@media(max-width:560px){
+  .grid-3,.grid-2{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-stats{gap:16px}
+  .card-img{height:150px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="announce" role="region" aria-label="更新公告">
+    <div class="in">
+      <span class="dot" aria-hidden="true"></span>
+      <b>赛务公告</b>
+      <span>11月7日第42场即兴命题赛题面已公布，报名截至当日19:30；短视频挑战第13期延长交片至11月9日22:00。</span>
+      <a href="/#latest">看更新</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="head-in">
+      <a class="brand" href="/#top" aria-label="每日大赛免费在线首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1f3a5f"/>
+          <path d="M16 42l9-22 7 16 6-9 10 15" fill="none" stroke="#f2b631" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="32" cy="49" r="3.5" fill="#f2b631"/>
+        </svg>
+        <span class="brand-txt"><strong>每日大赛免费在线</strong><span>DAILY CONTEST</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">栏目菜单</button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">赛事概览</a>
+        <a href="/#picks">今日精选</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">参赛指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#recommend">相关推荐</a>
+      </nav>
+      <a class="head-entry" href="/#guide">报名流程</a>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="heroH1">
+    <div class="hero-in">
+      <div>
+        <span class="hero-tag">今日 11 月 8 日 · 3 个赛道开放报名</span>
+        <h1 id="heroH1">每日大赛免费在线</h1>
+        <p class="hero-lead">按日期查赛程、按赛道看规则、按评审表核对分数。每晚 20:00 发布命题，90 分钟提交窗口，成绩次日 12:00 前在赛务账号公示。当前开放即兴命题赛、短视频挑战、图文创作赛三条主赛道，另有配音、数据解读、翻唱三场周赛。</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="/#guide">查看今日报名流程</a>
+          <a class="btn btn-ghost" href="/#latest">最新赛程与题面</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>42</b><span>本月已办场次</span></div>
+          <div><b>6</b><span>本周开放赛道</span></div>
+          <div><b>1,186</b><span>本周有效提交</span></div>
+          <div><b>24h</b><span>成绩公示时效</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 320" role="img">
+          <defs>
+            <linearGradient id="gg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ffffff"/>
+              <stop offset="1" stop-color="#f1ece0"/>
+            </linearGradient>
+          </defs>
+          <rect x="14" y="20" width="392" height="280" rx="18" fill="url(#gg)" stroke="#dcd6ca"/>
+          <rect x="36" y="44" width="150" height="12" rx="6" fill="#1f3a5f" opacity=".85"/>
+          <rect x="36" y="66" width="96" height="8" rx="4" fill="#9aa7b4"/>
+          <g stroke="#dcd6ca">
+            <line x1="36" y1="94" x2="384" y2="94"/>
+          </g>
+          <g>
+            <rect x="36" y="108" width="104" height="62" rx="8" fill="#e08a1e" opacity=".18"/>
+            <rect x="50" y="122" width="60" height="8" rx="4" fill="#e08a1e"/>
+            <rect x="50" y="138" width="76" height="7" rx="3.5" fill="#bfa878"/>
+            <rect x="50" y="152" width="48" height="7" rx="3.5" fill="#bfa878"/>
+          </g>
+          <g>
+            <rect x="156" y="108" width="104" height="62" rx="8" fill="#2c6f6a" opacity=".16"/>
+            <rect x="170" y="122" width="60" height="8" rx="4" fill="#2c6f6a"/>
+            <rect x="170" y="138" width="76" height="7" rx="3.5" fill="#9ab9b5"/>
+            <rect x="170" y="152" width="48" height="7" rx="3.5" fill="#9ab9b5"/>
+          </g>
+          <g>
+            <rect x="276" y="108" width="108" height="62" rx="8" fill="#1f3a5f" opacity=".12"/>
+            <rect x="290" y="122" width="60" height="8" rx="4" fill="#1f3a5f"/>
+            <rect x="290" y="138" width="80" height="7" rx="3.5" fill="#a9b4c1"/>
+            <rect x="290" y="152" width="50" height="7" rx="3.5" fill="#a9b4c1"/>
+          </g>
+          <g>
+            <rect x="36" y="188" width="348" height="1" fill="#dcd6ca"/>
+            <rect x="36" y="202" width="220" height="9" rx="4.5" fill="#c8cfd7"/>
+            <rect x="36" y="220" width="300" height="9" rx="4.5" fill="#d8dee4"/>
+            <rect x="36" y="238" width="180" height="9" rx="4.5" fill="#d8dee4"/>
+          </g>
+          <g>
+            <circle cx="352" cy="220" r="26" fill="none" stroke="#e08a1e" stroke-width="5" stroke-dasharray="120 40" stroke-linecap="round"/>
+            <text x="352" y="226" font-size="15" text-anchor="middle" fill="#1f3a5f" font-family="sans-serif" font-weight="700">TOP</text>
+          </g>
+          <path d="M36 278h348" stroke="#dcd6ca"/>
+          <rect x="36" y="264" width="72" height="8" rx="4" fill="#9aa7b4"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <!-- 01 概览 -->
+    <section class="section" id="overview" aria-labelledby="hOverview">
+      <div class="sec-head">
+        <span class="sec-no">01</span>
+        <h2 id="hOverview">赛事概览：一周六场怎么排</h2>
+        <span class="hint">按赛道与时间分层，不按热度堆叠</span>
+      </div>
+      <div class="cols">
+        <div>
+          <div class="grid-3">
+            <article class="card">
+              <div class="meta"><span>每晚 20:00 出题</span><span class="tag">主赛道</span></div>
+              <h3>即兴命题赛：30 分钟构思 + 90 分钟提交</h3>
+              <p>第 42 场在 11 月 7 日开赛，题面为“把一次失败讲成一个可复用的方法”。评审分内容完整度 40 分、结构 30 分、表达 30 分，超时按分钟扣 2 分。</p>
+            </article>
+            <article class="card">
+              <div class="meta"><span>周三、周六交片</span><span class="tag">视频</span></div>
+              <h3>短视频挑战 45—90 秒硬性时长</h3>
+              <p>第 13 期主题“一件被低估的日常工具”，11 月 4 日已收 148 份作品，14 份因时长超限扣分，最高分作品 87.5 分，来自账号“桥下修表摊”。</p>
+            </article>
+            <article class="card">
+              <div class="meta"><span>周四截稿</span><span class="tag">图文</span></div>
+              <h3>图文创作赛：1500 字以内配 3 图</h3>
+              <p>第 9 期要求写“一条街道的三种声音”，配图必须为本人拍摄，评审在版权项单列 10 分。11 月 6 日截稿，收到 96 篇。</p>
+            </article>
+            <article class="card">
+              <div class="meta"><span>周赛 · 周日</span><span class="tag">配音</span></div>
+              <h3>配音赛：90 秒片段对口型</h3>
+              <p>素材统一取自公开版权短片，允许改词但不允许消音。第 7 场冠军“南部通道”以 0.3 分优势胜出，评委提到其停顿处理。</p>
+            </article>
+            <article class="card">
+              <div class="meta"><span>周赛 · 周二</span><span class="tag">数据解读</span></div>
+              <h3>数据解读赛：一张图讲清一个结论</h3>
+              <p>参赛者须引用公开数据源并注明口径。11 月 3 日场次中，3 份作品因未标注样本量被扣 5 分，赛事规则页已同步示例。</p>
+            </article>
+            <article class="card">
+              <div class="meta"><span>周赛 · 周五</span><span class="tag">翻唱</span></div>
+              <h3>翻唱赛：一分钟清唱版</h3>
+              <p>只收人声轨，不接受伴奏混音。11 月 8 日 22:00 截止，当前报名 51 人，评审表在成绩页公开。</p>
+            </article>
+          </div>
+
+          <div class="notice">概览页只列赛程与硬性规则。具体题面、评审细则与申诉表分别放在最新更新、深度解析与常见问题，三处各说一层，不重复同一份信息。</div>
+        </div>
+
+        <aside aria-label="侧栏导航与速查">
+          <div class="panel">
+            <h3>页面栏目</h3>
+            <ul id="sideNav">
+              <li><a href="/#overview">赛事概览</a></li>
+              <li><a href="/#picks">今日精选</a></li>
+              <li><a href="/#latest">最新更新</a></li>
+              <li><a href="/#channels">分类入口</a></li>
+              <li><a href="/#deep">深度解析</a></li>
+              <li><a href="/#guide">参赛指南</a></li>
+              <li><a href="/#faq">常见问题</a></li>
+              <li><a href="/#comments">参赛者评论</a></li>
+              <li><a href="/#board">积分榜</a></li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>站内查找</h3>
+            <form class="search" id="searchForm" role="search" aria-label="站内查找">
+              <input type="search" id="searchInput" placeholder="搜赛道、题面、评审" aria-label="输入关键词">
+              <button type="submit">查找</button>
+            </form>
+            <div class="search-out" id="searchOut" aria-live="polite"></div>
+          </div>
+          <div class="panel">
+            <h3>今日数字</h3>
+            <ul>
+              <li>有效提交 217 份</li>
+              <li>平均提交用时 74 分钟</li>
+              <li>超时扣分 6 人</li>
+              <li>申诉受理 2 件</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 02 精选 -->
+    <section class="section" id="picks" aria-labelledby="hPicks">
+      <div class="sec-head">
+        <span class="sec-no">02</span>
+        <h2 id="hPicks">今日精选赛题与作品</h2>
+        <span class="hint">来自 11 月 5 日至 11 月 8 日的公开评审记录</span>
+      </div>
+      <div class="asy">
+        <article class="card big">
+          <img src="https://picsum.photos/seed/dailycontest-pick1/760/360" width="760" height="360" loading="lazy" alt="即兴命题赛第41场评审判定现场白板与提交截图纸质记录">
+          <div class="meta"><span>11 月 6 日 · 第 41 场</span><span class="tag">即兴命题赛</span></div>
+          <h3>“三分钟讲清一个反常识数字”高分稿：先把数字拆成人均</h3>
+          <p>选手“南岸记账员”没有直接引用总量，而是把 1.2 万亿拆到每个人头上，再对比 2019 年同期。评委给出 89 分，扣分点在结尾缺少来源链接。另一份同题作品用柱状图对照，因坐标轴未标单位被扣 6 分，最终 78 分。</p>
+        </article>
+        <article class="card">
+          <div class="meta"><span>11 月 4 日 · 第 13 期</span></div>
+          <h3>短视频：修表摊的放大镜</h3>
+          <p>87.5 分，时长 78 秒，前 3 秒就是螺丝刀特写。评委记录“没有旁白仍能看懂工序”。</p>
+        </article>
+        <article class="card">
+          <div class="meta"><span>11 月 7 日 · 第 9 期</span></div>
+          <h3>图文：菜市场清晨的三段声</h3>
+          <p>86 分，配图 3 张均为手机拍摄，文中标明拍摄时段 5:40、6:15、6:50，版权项满分。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 最新更新 -->
+    <section class="section" id="latest" aria-labelledby="hLatest">
+      <div class="sec-head">
+        <span class="sec-no">03</span>
+        <h2 id="hLatest">最新更新：赛程、题面与公示</h2>
+        <span class="hint">按时间倒序，每条只记一个新动作</span>
+      </div>
+      <div class="rows">
+        <div class="row">
+          <time datetime="2026-11-08">11-08</time>
+          <a href="/#overview">翻唱赛第 5 场今日 22:00 截止，人声轨仅收干声</a>
+          <span class="src">赛务公告</span>
+        </div>
+        <div class="row">
+          <time datetime="2026-11-07">11-07</time>
+          <a href="/#deep">第 42 场即兴命题赛题面公布：把一次失败讲成可复用方法</a>
+          <span class="src">赛务账号</span>
+        </div>
+        <div class="row">
+          <time datetime="2026-11-07">11-07</time>
+          <a href="/#comments">第 41 场终评公示，89 分作品的两处扣分理由公开</a>
+          <span class="src">评审组</span>
+        </div>
+        <div class="row">
+          <time datetime="2026-11-06">11-06</time>
+          <a href="/#latest">短视频挑战第 13 期交片延至 11 月 9 日 22:00</a>
+          <span class="src">视频赛道</span>
+        </div>
+        <div class="row">
+          <time datetime="2026-11-06">11-06</time>
+          <a href="/#guide">图文创作赛第 9 期截稿，收到 96 篇，版权项平均 7.4 分</a>
+          <span class="src">图文赛道</span>
+        </div>
+        <div class="row">
+          <time datetime="2026-11-05">11-05</time>
+          <a href="/#board">10 月积分榜结算完成，月冠军 86 分</a>
+          <span class="src">积分系统</span>
+        </div>
+        <div class="row">
+          <time datetime="2026-11-04">11-04</time>
+          <a href="/#faq">申诉表新增“计分错误”勾选项，3 个工作日内答复</a>
+          <span class="src">赛务组</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 分类 -->
+    <section class="section" id="channels" aria-labelledby="hChannels">
+      <div class="sec-head">
+        <span class="sec-no">04</span>
+        <h2 id="hChannels">分类入口：按赛道找比赛</h2>
+        <span class="hint">10 个频道，报名门槛与提交格式各不相同</span>
+      </div>
+      <div class="chips">
+        <a class="chip" href="/#overview">即兴命题赛 <small>每日</small></a>
+        <a class="chip" href="/#overview">短视频挑战 <small>周更</small></a>
+        <a class="chip" href="/#overview">图文创作赛 <small>周四截稿</small></a>
+        <a class="chip" href="/#overview">配音对口型赛 <small>周赛</small></a>
+        <a class="chip" href="/#overview">数据解读赛 <small>周二</small></a>
+        <a class="chip" href="/#overview">一分钟翻唱赛 <small>周五</small></a>
+        <a class="chip" href="/#guide">计时提交训练 <small>练习场</small></a>
+        <a class="chip" href="/#deep">评审标准拆解 <small>专栏</small></a>
+        <a class="chip" href="/#comments">选手复盘记录 <small>社区</small></a>
+        <a class="chip" href="/#board">月度积分榜 <small>排名</small></a>
+      </div>
+      <div class="notice" style="margin-top:16px">练习场不计积分，提交后自动返回评审表副本，适合第一次参赛的人先跑一遍 90 分钟计时。</div>
+    </section>
+
+    <!-- 05 深度 -->
+    <section class="section" id="deep" aria-labelledby="hDeep">
+      <div class="sec-head">
+        <span class="sec-no">05</span>
+        <h2 id="hDeep">深度解析：90 分钟限时如何决定分数分布</h2>
+        <span class="hint">唯一主体阅读区，含可核对的时间线与计分对照</span>
+      </div>
+      <article class="deep">
+        <h3>判断一：限时赛的前 20 分钟决定上限，后 70 分钟只决定完成度</h3>
+        <p>第 39 至 41 场共 641 份提交里，前 20 分钟完成选题框架的 214 份，平均分 78.6；第 60 分钟后才开始成稿的 163 份，平均分 66.2。两项差距 12.4 分，比“文笔”单项平均差距 3.1 分更大。这个数字来自赛务组公开的三场合计表，可以逐份核对。</p>
+        <table class="compare">
+          <caption>三场命题赛提交时段与平均分对照（赛务组 11 月 6 日公示）</caption>
+          <tr><th>开始成稿时间</th><th>提交份数</th><th>平均分</th><th>超时扣分人次</th></tr>
+          <tr><td>前 20 分钟</td><td class="num">214</td><td class="num">78.6</td><td class="num">2</td></tr>
+          <tr><td>20—40 分钟</td><td class="num">264</td><td class="num">73.4</td><td class="num">5</td></tr>
+          <tr><td>40—60 分钟</td><td class="num">163</td><td class="num">69.8</td><td class="num">9</td></tr>
+          <tr><td>60 分钟后</td><td class="num">163</td><td class="num">66.2</td><td class="num">18</td></tr>
+        </table>
+        <p>反例也有。第 41 场第 7 名“灯下读数”在 63 分钟才开始写，最终 81 分，原因是赛前已备好三段素材卡。这条可以反驳“越早动笔越好”的说法：早动的收益来自素材准备，不来自打字速度。</p>
+
+        <h3>判断二：评审表权重调整后，结构分比表达分更值钱</h3>
+        <p>10 月 20 日起，即兴命题赛评分从“内容 40、表达 35、结构 25”改为“内容 40、结构 30、表达 30”。第 40 场与第 41 场数据显示，结构项得 24 分以上的 87 份作品中有 71 份总分超过 80；表达项同分段只有 52 份超过 80。规则改动前后的原始评分表都可在成绩页下载。</p>
+        <blockquote>评委“周六值班”在 11 月 7 日终评记录里写：“开头三句没给结论的稿子，后面补回来要花 400 字以上。”这句是评审个人措辞，不是赛务组统一口径，但它与两场数据走向一致。</blockquote>
+
+        <h3>判断三：短视频赛的时长扣分被高估，开头 3 秒才是分水岭</h3>
+        <p>第 12、13 期共 292 份作品，因时长被扣分 27 份，其中 9 份仍进前 30。评审记录里出现频率最高的扣分理由不是时长，而是“前 3 秒无信息”。这类作品 61 份，平均分 64.5，比时长扣分组的 71.3 还低 6.8 分。时长是硬规则，开头是软判断，两者在分数上并不同权重。</p>
+
+        <h3>说法差异：关于“免费”的两种理解</h3>
+        <p>事实层面：公开赛道报名与提交均不收费，这一点在赛务公告 10 月 28 日版本里写明。转述层面：部分社区帖把“免费”理解为“无任何门槛”，但赛事仍要求实名账号与原创声明。推测层面：若后续线下决赛增加场地成本，押金条款可能调整，目前只对已公布的三场线下活动收取可退押金。回应层面：赛务组在 11 月 5 日答疑中表示，线上赛道在 2026 年内维持现有规则。</p>
+
+        <h3>可核对清单：把一场比赛的分数拆开看</h3>
+        <ol class="steps">
+          <li><b>先看内容完整度。</b>题面要求的三个要素是否都出现，缺一项通常扣 8—12 分，这一项在第 41 场被扣分的 39 份作品里全部命中。</li>
+          <li><b>再看结构。</b>开头是否给结论、中段是否有对照、结尾是否回到题面。结构项 30 分里，开头占 10 分。</li>
+          <li><b>最后看表达。</b>句子长度、术语解释、错别字，扣分区间普遍在 1—5 分，很少决定名次。</li>
+          <li><b>核对提交时间戳。</b>系统记录精确到秒，超时 60 秒内按 1 分扣，超过 5 分钟按 2 分/分钟扣。</li>
+        </ol>
+      </article>
+    </section>
+
+    <!-- 06 指南 -->
+    <section class="section" id="guide" aria-labelledby="hGuide">
+      <div class="sec-head">
+        <span class="sec-no">06</span>
+        <h2 id="hGuide">参赛指南：从注册到公示的 5 个动作</h2>
+        <span class="hint">每步都有对应入口，不做泛泛提醒</span>
+      </div>
+      <div class="grid-2">
+        <div>
+          <ol class="steps">
+            <li><b>注册实名账号。</b>手机号加身份证后四位，用于原创声明与成绩归档，昵称可随时改，成绩跟账号走。</li>
+            <li><b>选赛道并读规则页。</b>三条主赛道的提交格式不同：文字稿收 Markdown，视频收 MP4，图文收 JPG 加正文。</li>
+            <li><b>在开赛前 10 分钟进入提交页。</b>题面在 20:00 整点刷新，提前进入可看到倒计时与格式提示。</li>
+            <li><b>提交后保存回执编号。</b>回执是申诉唯一凭据，11 月 3 日有 2 人因未保存回执延误申诉。</li>
+            <li><b>次日 12:00 查成绩页。</b>评审表逐项公开，含扣分理由与评委备注。</li>
+          </ol>
+        </div>
+        <div>
+          <div class="card" style="margin-bottom:16px">
+            <h3>格式对照</h3>
+            <table class="compare" style="margin-bottom:0">
+              <tr><th>赛道</th><th>提交格式</th><th>硬性上限</th></tr>
+              <tr><td>即兴命题赛</td><td>Markdown</td><td>1200 字</td></tr>
+              <tr><td>短视频挑战</td><td>MP4 / 竖横屏均可</td><td>45—90 秒</td></tr>
+              <tr><td>图文创作赛</td><td>JPG ×3 + 正文</td><td>1500 字</td></tr>
+              <tr><td>配音对口型赛</td><td>WAV 或 MP4</td><td>90 秒</td></tr>
+            </table>
+          </div>
+          <div class="card">
+            <h3>常见格式失败</h3>
+            <p>11 月 4 日至 7 日共有 11 份提交被退回，其中 6 份是视频码率过低、3 份是图片超过 8MB、2 份是正文带外链。退回后可补交一次，不影响评分。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 FAQ -->
+    <section class="section" id="faq" aria-labelledby="hFaq">
+      <div class="sec-head">
+        <span class="sec-no">07</span>
+        <h2 id="hFaq">常见问题</h2>
+        <span class="hint">答案主语为赛事规则本身</span>
+      </div>
+      <details class="faq" open>
+        <summary>每日大赛免费在线的报名要交参赛费吗？</summary>
+        <div class="ans">公开赛道的报名与提交都不收费，评审打分表在赛后 48 小时内公示。少数线下决赛涉及场地押金，签到后原路退回，未到场不退还。11 月 8 日在办的三条线上赛道均无任何费用项。</div>
+      </details>
+      <details class="faq">
+        <summary>即兴命题赛的题目什么时候公布？</summary>
+        <div class="ans">命题在当晚 20:00 由赛务账号发布，选手有 30 分钟构思、90 分钟提交。11 月 6 日第 41 场的题目是“三分钟讲清一个反常识数字”，共收到 217 份提交，最高分 89 分。</div>
+      </details>
+      <details class="faq">
+        <summary>短视频挑战的时长限制是多少？</summary>
+        <div class="ans">横屏与竖屏均可，成片时长 45 秒至 90 秒，超时或不足按每分钟扣 1 分。11 月 4 日第 12 期有 14 份作品因时长被扣分，仍有两份进入前十。时长以提交文件的元数据为准。</div>
+      </details>
+      <details class="faq">
+        <summary>评审意见能申诉吗？</summary>
+        <div class="ans">可以在成绩公布后 24 小时内提交申诉表，组委会在 3 个工作日内答复。争议范围限于规则适用与计分错误，不重新评判审美取向。11 月 5 日答疑记录里明确写过这一点。</div>
+      </details>
+      <details class="faq">
+        <summary>积分榜的积分怎么计算？</summary>
+        <div class="ans">单场名次分加出勤分，连续参赛三场额外加 5 分，缺席不扣分，积分按月清零。10 月冠军“白鹭不飞”累计 86 分，当月参赛 21 场。</div>
+      </details>
+      <details class="faq">
+        <summary>同一份作品能投两个赛道吗？</summary>
+        <div class="ans">不能。系统按作品指纹去重，跨赛道重复提交会取消当次成绩。配音与翻唱两个赛道的人声轨格式不同，同一条录音改格式重投也算重复。</div>
+      </details>
+    </section>
+
+    <!-- 08 评论 -->
+    <section class="section" id="comments" aria-labelledby="hComments">
+      <div class="sec-head">
+        <span class="sec-no">08</span>
+        <h2 id="hComments">参赛者评论</h2>
+        <span class="hint">含正面、中性、吐槽三类，均针对具体条目</span>
+      </div>
+      <div class="cmts">
+        <div class="cmt">
+          <div class="who"><span class="av">南</span><b>南岸记账员</b><span>11-07</span><span class="rate">★★★★☆</span></div>
+          <p>第 41 场那个 89 分我服，但结尾来源链接扣 3 分有点重。人均拆分那一段我反复看了三遍，确实比堆总量清楚。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">桥</span><b>桥下修表摊</b><span>11-04</span><span class="rate">★★★★★</span></div>
+          <p>短视频第 13 期能延到 9 号真是帮大忙，78 秒那个版本是在摊位灯下拍的，放大镜特写就是一镜到底，没补光。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">灯</span><b>灯下读数</b><span>11-06</span><span class="rate">★★★☆☆</span></div>
+          <p>90 分钟对已经备素材的人友好，对第一次参赛的人不太友好。我第 41 场 63 分钟才动笔，靠三张旧素材卡拿到 81 分，运气成分不小。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">白</span><b>白鹭不飞</b><span>11-05</span><span class="rate">★★★★☆</span></div>
+          <p>积分榜月清零这点我得吐槽，10 月打了 21 场才 86 分，11 月 1 号一看归零，差点不想打了。不过出勤分加 5 分的设计还算合理。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">周</span><b>周六值班</b><span>11-07</span><span class="rate">—</span></div>
+          <p>作为评审说一句：开头三句没结论的稿子确实要花 400 字补回来，这不是审美偏好，是读稿时间的限制。结构改权重后更明显。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">老</span><b>老胶片盒</b><span>11-06</span><span class="rate">★★☆☆☆</span></div>
+          <p>图文赛版权项要本人拍摄，我一张 2019 年的街景被判定为非本人拍摄，理由是 EXIF 缺失。规则没问题，但申诉说明写得太简，来回折腾了两天。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 通讯 -->
+    <section class="section" id="news" aria-labelledby="hNews">
+      <div class="sec-head">
+        <span class="sec-no">09</span>
+        <h2 id="hNews">相关资讯</h2>
+        <span class="hint">只记已发生的事项与公开说法</span>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="meta"><span>11-07</span><span class="tag">规则</span></div>
+          <h3>评分权重调整后的第二场数据出炉</h3>
+          <p>结构项 30 分制下第 41 场平均 21.4 分，比第 40 场高 1.9 分。赛务组未对涨幅作解释，只公布原始表。</p>
+        </article>
+        <article class="card">
+          <div class="meta"><span>11-06</span><span class="tag">赛道</span></div>
+          <h3>图文赛版权项平均 7.4 分</h3>
+          <p>96 篇作品里 21 篇因配图来源不明被扣分，其中 4 篇扣满 10 分。评审组建议提交时附拍摄时间。</p>
+        </article>
+        <article class="card">
+          <div class="meta"><span>11-05</span><span class="tag">答疑</span></div>
+          <h3>线下决赛押金条款的回应</h3>
+          <p>赛务组称线上赛道 2026 年内维持免费规则，线下三场活动的押金在签到后 3 个工作日内退回。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10 榜单 -->
+    <section class="section" id="board" aria-labelledby="hBoard">
+      <div class="sec-head">
+        <span class="sec-no">10</span>
+        <h2 id="hBoard">11 月积分榜与出勤记录</h2>
+        <span class="hint">截至 11 月 8 日 12:00 的排名</span>
+      </div>
+      <div class="cols">
+        <div>
+          <table class="compare">
+            <caption>11 月积分榜前 6（名次分 + 出勤分 + 连赛加分）</caption>
+            <tr><th>排名</th><th>账号</th><th>参赛场次</th><th>积分</th></tr>
+            <tr><td class="num">1</td><td>桥下修表摊</td><td class="num">9</td><td class="num">41</td></tr>
+            <tr><td class="num">2</td><td>南岸记账员</td><td class="num">8</td><td class="num">38</td></tr>
+            <tr><td class="num">3</td><td>灯下读数</td><td class="num">8</td><td class="num">36</td></tr>
+            <tr><td class="num">4</td><td>南部通道</td><td class="num">7</td><td class="num">33</td></tr>
+            <tr><td class="num">5</td><td>老胶片盒</td><td class="num">6</td><td class="num">29</td></tr>
+            <tr><td class="num">6</td><td>白鹭不飞</td><td class="num">6</td><td class="num">27</td></tr>
+          </table>
+        </div>
+        <div>
+          <ul class="tl">
+            <li><time datetime="2026-11-05">11 月 5 日</time>10 月积分结算完成，月冠军 86 分，11 月起按新榜重算。</li>
+            <li><time datetime="2026-11-06">11 月 6 日</time>第 41 场结果公示，前 10 名中 4 人本月首次进榜。</li>
+            <li><time datetime="2026-11-07">11 月 7 日</time>连赛加分规则确认：连续三场加 5 分，中断后重新计数。</li>
+            <li><time datetime="2026-11-08">11 月 8 日</time>今日 3 条赛道开放，榜单将在次日 12:00 更新。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 可信度分层 -->
+    <section class="section" id="trust" aria-labelledby="hTrust">
+      <div class="sec-head">
+        <span class="sec-no">11</span>
+        <h2 id="hTrust">信息可信度分层</h2>
+        <span class="hint">同一件事，来源不同，采信程度不同</span>
+      </div>
+      <div class="tiers">
+        <div class="tier">
+          <span class="lvl">第一层 · 可直接引用</span>
+          <h4>赛务公告与评审表原件</h4>
+          <p>含日期、场次编号、逐项分数。11 月 7 日第 42 场题面、11 月 6 日第 41 场评分表均属此类，可作为申诉依据。</p>
+        </div>
+        <div class="tier">
+          <span class="lvl">第二层 · 转述需核对</span>
+          <h4>社区复盘与选手自述</h4>
+          <p>“桥下修表摊”在评论里说 78 秒版本一镜到底，这一条可核对成片时长与剪辑点，但补光与否无法从视频判定。</p>
+        </div>
+        <div class="tier">
+          <span class="lvl">第三层 · 明确标注推测</span>
+          <h4>规则未来走向的讨论</h4>
+          <p>押金条款是否调整尚无公告，目前只有 11 月 5 日答疑中的口头回应，不应作为报名决策依据。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 推荐 -->
+    <section class="section" id="recommend" aria-labelledby="hRecommend">
+      <div class="sec-head">
+        <span class="sec-no">12</span>
+        <h2 id="hRecommend">相关推荐</h2>
+        <span class="hint">按你正在准备的方向选</span>
+      </div>
+      <div class="tags">
+        <a href="/#deep">90 分钟限时选题框架</a>
+        <a href="/#guide">短视频 45—90 秒剪辑节奏</a>
+        <a href="/#faq">评审申诉表填写要点</a>
+        <a href="/#overview">图文赛本人拍摄证明</a>
+        <a href="/#board">连续参赛加分怎么算</a>
+        <a href="/#latest">配音对口型素材版权</a>
+        <a href="/#comments">第 41 场高分稿复盘</a>
+        <a href="/#trust">赛务公告与社区说法对照</a>
+        <a href="/#guide">数据解读赛口径标注</a>
+        <a href="/#overview">练习场计时提交训练</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#f2b631"/>
+            <path d="M16 42l9-22 7 16 6-9 10 15" fill="none" stroke="#14202c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <strong>每日大赛免费在线</strong>
+        </div>
+        <p style="font-size:13.5px;color:#9fb0c1">按日期查赛程、按赛道看规则、按评审表核对分数。三条主赛道加三场周赛，命题与成绩均在固定时间公开。</p>
+        <div class="notice">页面所列为示例赛务数据，用于演示赛事信息组织方式；实际报名以各赛道规则页与赛务公告为准。</div>
+      </div>
+      <div>
+        <h3>赛道</h3>
+        <ul class="foot-list">
+          <li><a href="/#overview">即兴命题赛</a></li>
+          <li><a href="/#overview">短视频挑战</a></li>
+          <li><a href="/#overview">图文创作赛</a></li>
+          <li><a href="/#overview">配音对口型赛</a></li>
+          <li><a href="/#overview">数据解读赛</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>栏目</h3>
+        <ul class="foot-list">
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">参赛指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#board">积分榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>参与</h3>
+        <ul class="foot-list">
+          <li><a href="/#comments">参赛者评论</a></li>
+          <li><a href="/#recommend">相关推荐</a></li>
+          <li><a href="/#trust">可信度分层</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+        </ul>
+        <p style="font-size:12.5px;color:#8fa0b1;margin-top:10px">正文更新时间 2026-11-08 12:00，对应可核对项：第 42 场题面、第 41 场终评公示、短视频第 13 期延期通知。</p>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© 2026 每日大赛免费在线 · 示例站点</span>
+      <span>赛务公告 11 月 8 日版 · 所有分数与场次以公示原件为准</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var navToggle=document.getElementById('navToggle');
+  var mainNav=document.getElementById('mainNav');
+  if(navToggle&&mainNav){
+    navToggle.addEventListener('click',function(){
+      var open=mainNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded',open?'true':'false');
+      navToggle.textContent=open?'收起菜单':'栏目菜单';
+    });
+    mainNav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=820){
+        mainNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded','false');
+        navToggle.textContent='栏目菜单';
+      }
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'&&mainNav.classList.contains('open')){
+        mainNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded','false');
+        navToggle.textContent='栏目菜单';
+        navToggle.focus();
+      }
+    });
+  }
+
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>480){toTop.classList.add('show');}else{toTop.classList.remove('show');}
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  /* side nav scroll highlight */
+  var sideLinks=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets=sideLinks.map(function(a){
+    var id=a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var y=window.scrollY+140,idx=-1;
+    targets.forEach(function(t,i){
+      if(t&&t.offsetTop<=y){idx=i;}
+    });
+    sideLinks.forEach(function(a,i){a.classList.toggle('active',i===idx);});
+  }
+  window.addEventListener('scroll',highlight,{passive:true});
+  highlight();
+
+  /* local search */
+  var data=[
+    {t:'即兴命题赛第 42 场题面',u:'/#deep',d:'11 月 7 日公布，30 分钟构思 + 90 分钟提交'},
+    {t:'第 41 场终评公示',u:'/#comments',d:'89 分作品扣分理由与两位评委备注'},
+    {t:'短视频挑战第 13 期延期',u:'/#latest',d:'交片延至 11 月 9 日 22:00'},
+    {t:'图文创作赛版权项',u:'/#guide',d:'本人拍摄证明与 EXIF 要求'},
+    {t:'评审申诉表',u:'/#faq',d:'成绩公布后 24 小时内提交'},
+    {t:'积分榜与出勤分',u:'/#board',d:'11 月前 6 名与连赛加分规则'},
+    {t:'七言与配音素材',u:'/#overview',d:'配音对口型赛 90 秒收干声'},
+    {t:'限时赛分数分布',u:'/#deep',d:'前 20 分钟开始成稿平均 78.6 分'}
+  ];
+  var form=document.getElementById('searchForm');
+  var input=document.getElementById('searchInput');
+  var out=document.getElementById('searchOut');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var q=input.value.trim();
+    if(!q){out.innerHTML='<span class="hit">请输入赛道名、场次或规则关键词。</span>';return;}
+    var hits=data.filter(function(x){return (x.t+x.d).indexOf(q)>-1;});
+    if(hits.length===0){
+      out.innerHTML='<span class="hit">没有找到与“'+q.replace(/</g,'&lt;')+'”相关的赛程条目，可换用“命题赛”“短视频”“申诉”等词。</span>';
+      return;
+    }
+    out.innerHTML=hits.map(function(x){
+      return '<a class="hit" href="'+x.u+'"><b>'+x.t+'</b><br><span>'+x.d+'</span></a>';
+    }).join('');
+  });
+})();
+</script>
+</body>
+            </html>
